@@ -1,0 +1,57 @@
+header{ text-align: center;
+
+}
+h2{text-align: center;
+    
+    
+}
+
+div.a{
+    font-family: 'Courier New', Courier, monospace;
+}
+div.b{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{ text-align: center;
+
+}
+figcaption{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.c{
+    float: right;
+}
+
+div.d{
+    float: left;
+    width: 40%;
+}
+
+#menu{margin: 50px;
+    text-align: center;
+
+}
+#menu ul{margin: 0;
+    
+    list-style: none;
+
+
+}
+#menu ul li{ display: inline;
+
+}
+#menu ul li a{padding: 20px 90px;
+    display: inline-block;
+    color: silver;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    
+
+}
+#menu ul li a:hover{
+    color: blue;
+    cursor: -moz-zoom-in;
+}

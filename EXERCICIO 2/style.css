@@ -1,0 +1,45 @@
+p+p {
+    text-indent: 1.5em;
+    margin-top: 0
+}
+
+p.stb {
+    text-indent: 0;
+    margin-top: 0.83em
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #191970;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+div.a{
+    text-align: center;
+}
+div.c{
+    width: 200px;
+    height: 200px;
+    background-color: #F23005;
+    margin-left: 50px;
+    -webkit-box-shadow: -35px 32px 14px rgba(29, 140, 231, 0.45);
+    -moz-box-shadow:    -35px 32px 14px rgba(29, 140, 231, 0.45);
+    box-shadow:         -35px 32px 14px rgba(29, 140, 231, 0.45);   }
+
