@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var irp = 0;
+        var resultado = 0;
+        var mensagem = "";
+    
+        function fracao() {
+    
+    
+            var text = document.getElementById("nome").value;
+    
+    
+            irp = parseFloat(document.getElementById("salario").value);
+    
+            if (irp <= 0) {
+                alert("Valor Inválido");
+    
+    
+            }
+    
+    
+            if (irp > 1434 && irp <= 2150) {
+                resultado = irp * 0.075;
+                resultado = resultado.toFixed(2);
+                mensagem = text + " você terá uma fracao de 7.5%";
+                
+                
+    
+            }
+    
+    
+            if (irp > 2150 && irp <= 2866) {
+                resultado = irp * 0.15;
+                resultado = resultado.toFixed(2);
+                mensagem = text + " você terá uma fracao de 15%";
+    
+            }
+            if (irp > 2866 && irp <= 3582) {
+                resultado = irp * 0.225;
+                resultado = resultado.toFixed(2);
+                mensagem = text + " você terá uma fracao de 22.5%";
+    
+            }
+            if (irp > 3582) {
+                resultado = irp * 0.275;
+                resultado = resultado.toFixed(2);
+                mensagem = text + " você terá uma fracao de 27.5%";
+            
+            }
+    
+            if (irp > 0 && irp <= 1434) {
+                mensagem = text + " você está isento do imposto de renda!";
+    
+            }
+    
+            document.getElementById("imposto").value = resultado;
+            document.getElementById("mensagem").innerHTML = mensagem;
+    
+    
+        }
+    </script>
+    </head>
+    
+    <body>
+        <h1>Cálculo Imposto de Renda</h1>
+        <br> Registro: <br>
+        <input type="text" id="registro">
+        <p></p>
+        <br> Nome: <br>
+        <input type="text" id="nome">
+        <p></p>
+        <br> Salário: <br>
+        <input type="number" id="salario">
+        <br>
+        <p></p>
+        <input type="button" value="Calcular Imposto de Renda" onclick="fracao()">
+        <p></p>
+        <br> Imposto de Renda: <br>
+        <p></p>
+        <input id="imposto">
+        <p id="mensagem"></p>
+        <br>
+
+    
+</body>
+</html>

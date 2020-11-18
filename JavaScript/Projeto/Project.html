@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+     <!--
+        Nome: Danilo dos Santos Simões      RGM: 23448954
+        Nome: Igor Gomes da Mata            RGM: 23256079
+        Nome: Mateus Caetano Ribeiro        RGM: 23189673
+        
+        -->
+    
+</head>
+<script>
+
+    function Ordem(ordenacao){
+        var resultado = 0;
+        
+    
+
+
+    var x = parseInt(document.getElementById("n1").value);
+    var y = parseInt(document.getElementById("n2").value);
+    var z = parseInt(document.getElementById("n3").value);
+
+    var media = (x + y + z)/3;
+
+
+    let lista = [];
+
+    lista.push(x);
+    lista.push(y);
+    lista.push(z);
+
+
+    switch(ordenacao){
+        case "1":
+        
+         lista.sort(function(a, b) {
+            return a - b;
+        });
+            break;
+
+        case "2":
+        
+        lista.sort(function(a, b) {
+            return b - a;
+        });
+            break;
+
+        case "3":
+           
+            alert("A média dos números é " + media.toFixed(2) );
+        default:
+        
+            break;
+
+        
+    }
+    document.getElementById("resultado").value = lista;
+
+}
+    
+
+</script>
+<body>
+    
+    Numero 1: 
+    <input type="text" id="n1">
+    <br>
+    Numero 2: 
+    <input type="text" id="n2">
+    <br>
+    Numero 3: 
+    <input type="text" id="n3">
+    <br>
+    <br>
+
+    <input type="button" value="Ordem Crescente" onclick="Ordem('1')" >
+    
+    <input type="button" value="Ordem Decrescente" onclick="Ordem('2')" >
+    
+    <input type="button" value="Média dos Valores" onclick="Ordem('3')">
+    <br>
+    <br>
+    
+
+    Ordenação:
+    <input id="resultado">
+
+
+
+
+    
+       
+
+    
+</body>
+</html>
